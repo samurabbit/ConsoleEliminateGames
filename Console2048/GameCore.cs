@@ -268,6 +268,10 @@ namespace Console2048
             return false;
         }
 
+        /// <summary>
+        /// 判断四个方向移动是否还有可能的合并，如果有则游戏未结束，如果没有则游戏结束
+        /// </summary>
+        /// <returns>判断游戏是否存在继续进行的可能</returns>
         private bool IfNotEndGame()
         {
             //备份图
