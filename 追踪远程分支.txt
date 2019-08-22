@@ -6,3 +6,5 @@ git branch --set-upstream-to=remote_name/branch_name branch_name
 git checkout -b local_branch remote_name/remote_branch
 该命令的作用创建本地分支 local_branch，并且追踪远端分支remote_name/remote_branch
 如果自己本地有一个submodule，submodule指向的库被修改了，自己工程中的内容也会提示被修改了，需要提交到服务器上去，但是，这个提交的内容不是被修改的内容，而是分支的相关信息，这个change内容和普通的change内容是不一样的。
+在VS2017进入 > 【工具】菜单 > Nuget包管理器 > 程序包管理器控制台
+在该控制台中执行：git branch -u 远程位置/远程分支名 本地分支名，立马好使
